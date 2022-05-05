@@ -19,18 +19,18 @@ public class AgeActionApplication {
 	}
 
 	
-	@Configuration
-	@Profile("!cloud")
-	public class DataSourceConfig {
+	// @Configuration
+	// @Profile("!cloud")
+	// public class DataSourceConfig {
 	    
-	    @Bean
-	    public DataSource getDataSource() {
-	        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-	        dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
-	        dataSourceBuilder.url("jdbc:mysql://localhost:3306/service_instance_db?useSSL=FALSE");
-	        dataSourceBuilder.username("a7b72874e80446c9869ebacf7628100f");
-	        dataSourceBuilder.password("rhnnbtcr9jkcf5m6");
-	        return dataSourceBuilder.build();
-	    }
-	}
+	//     @Bean
+	//     public DataSource getDataSource() {
+	//         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+	//         dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
+	//         dataSourceBuilder.url("jdbc:mysql://localhost:3306/service_instance_db?useSSL=FALSE");
+	//         dataSourceBuilder.username("a7b72874e80446c9869ebacf7628100f");
+	//         dataSourceBuilder.password("rhnnbtcr9jkcf5m6");
+	//         return dataSourceBuilder.build();
+	//     }
+	// }
 }
