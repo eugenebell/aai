@@ -17,4 +17,11 @@ public class DatabaseConfig {
       config.setJdbcUrl(dbUrl);
       return new HikariDataSource(config);
   }
+
+  @Bean(name="entityManagerFactory")
+public LocalSessionFactoryBean sessionFactory() {
+    LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+
+    return sessionFactory;
+} 
 }
